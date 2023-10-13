@@ -1,0 +1,52 @@
+a {
+  text-decoration: none;
+}
+#carousel {
+  max-height: 600px;
+
+}
+
+
+.helloHover:hover {
+  color: #494949 !important;
+border-radius: 10px;
+
+transition: all 0.3s ease 0s;
+box-shadow: 1px 1px 10px 5px rgb(221, 224, 22);
+}
+.dark {
+  background-color: #333 !important;
+  color: #fff !important;
+  opacity: 80%;
+} 
+ .light {
+  background-color: #fff !important;
+  color: #333 !important;
+}
+/* rgb(81, 228, 14); */
+
+
+@media only screen and (max-width: 480px) {
+  .App {
+    max-width: 100% !important;
+
+  }
+  #carousel {
+    max-height: 250px;
+    object-fit: contain !important;
+  }
+
+  .mobView {
+    margin-bottom:1em;
+    display: block;
+    width:100%
+  }
+
+  .cartView{
+    margin-left: 85% !important;
+  }
+}
+
+
+
+
