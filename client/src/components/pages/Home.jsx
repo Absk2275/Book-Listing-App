@@ -14,7 +14,7 @@ export default function Home(props) {
 
     const loadData = async () => {
        
-        let res = await fetch("http://localhost:8000/foodData",
+        let res = await fetch("http://localhost:8000/bookData",
             {
                 method: "POST",
                 header: { "Content-type": "application/json" }
