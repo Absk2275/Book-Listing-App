@@ -8,7 +8,7 @@ export default function MyOrder() {
 
     const fetchMyOrder = async () => {
         console.log(localStorage.getItem('userEmail'))
-        await fetch("https://foodapp-arnm.onrender.com/myOrderData", {
+        await fetch("https://bookapp-xrlg.onrender.com/myOrderData", {
           
             method: 'POST',
             headers: {

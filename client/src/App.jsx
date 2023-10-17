@@ -7,6 +7,7 @@ import Signup from './components/pages/Signup';
 import { CartProvider } from './components/ContextReducer';
 import MyOrders from './components/pages/MyOrders';
 import { useState, useEffect } from 'react';
+import AddBook from './components/pages/AddBooks';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -30,6 +31,7 @@ function App() {
           <Route exact path="/login" element={<Login/>} />
           <Route exact path="/register" element={<Signup/>} />
           <Route exact path="/myorders" element={<MyOrders/>} />
+          <Route exact path="/addbooks" element={<AddBook/>} />
         </Routes>
       </div>
       

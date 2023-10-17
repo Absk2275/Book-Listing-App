@@ -4,18 +4,15 @@ const userSchema = new mongoose.Schema({
 
     CategoryName: {
         type: String,
-        enum: ['history', 'fiction', 'fantasy'],
+        enum: ['History', 'Fiction', 'Fantasy','Biography'],
         required: true
       },
-   title:{
+   name:{
         type:String, 
         require:true
     },
-    author:{
-        type:String, 
-        required:true
-    },
-    imageUrl:{
+   
+    img:{
         type:String, 
         required:true
     },
@@ -28,7 +25,7 @@ const userSchema = new mongoose.Schema({
       ],
       description: { type: String, required: true }
 
-}, {timestamps:true})
+})
 const Addbooks = mongoose.model("food_items", userSchema);
 
 module.exports = Addbooks;

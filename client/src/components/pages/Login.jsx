@@ -27,7 +27,7 @@ export default function Login() {
       }
       else {
         setErr("");
-        const res = await fetch("http://localhost:8000/loginuser", {
+        const res = await fetch("https://bookapp-xrlg.onrender.com/loginuser", {
           method: "POST",
           mode: "cors",
           headers: { "Content-Type": "application/json" },
@@ -47,8 +47,10 @@ export default function Login() {
         }
 
         if (json.success) {
+          
           localStorage.setItem("userEmail", data.email);
           localStorage.setItem("authToken", json.authToken);
+          localStorage.setItem("role", json.role);
           setLoading(true);
           
           navigate("/");
@@ -134,7 +136,7 @@ export default function Login() {
                     </div>
                     <div className="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
 
-                      <img src="https://images.unsplash.com/photo-1534604973900-c43ab4c2e0ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGRhcmslMjBmb29kJTIwcGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                      <img src="https://images.unsplash.com/photo-1610116306796-6fea9f4fae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                         className="img-fluid" alt="Sample_image" />
 
                     </div>

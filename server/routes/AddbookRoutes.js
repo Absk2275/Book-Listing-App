@@ -6,12 +6,11 @@ const AddBook = require("../models/Addbooks");
 
 router.post("/addbooks", async (req, res)=>{
     try{
-        const { CategoryName, title, author, imageUrl,  options,  description} = req.body;
+        const { CategoryName, name, img,  options,  description} = req.body;
         const newBook = await AddBook.create({
             CategoryName,
-            title,
-            author,
-            imageUrl,
+            name,
+            img,
             options,
             description
           });

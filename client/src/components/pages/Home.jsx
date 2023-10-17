@@ -14,7 +14,7 @@ export default function Home(props) {
 
     const loadData = async () => {
        
-        let res = await fetch("http://localhost:8000/foodData",
+        let res = await fetch("https://bookapp-xrlg.onrender.com/foodData",
             {
                 method: "POST",
                 header: { "Content-type": "application/json" }
